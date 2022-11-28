@@ -1,0 +1,36 @@
+.background {
+    background-size: cover;
+    background-position: center;
+}
+
+.background1 {
+    background-image: url(../img/dinner-bg.webp);
+    @extend .background;
+}
+
+.background2 {
+    background-image: url(../img/eating-bg.webp);
+    @extend .background;
+}
+
+.background3 {
+    background-image: url(../img/pasta-bg.webp);
+    @extend .background;
+}
+
+.background4 {
+    background-image: url(../img/cooking-bg.webp);
+    @extend .background;
+}
+
+.white-plate {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2em;
+    margin: $base-margin;
+}
+
+@media (max-width: 1000px) {
+    .white-plate {
+        padding: 2em .5em;
+    }
+}

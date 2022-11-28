@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicons -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="images/png" href="img/favicon.png">
+    <!-- css -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <title>Johans Kök</title>
+</head>
+
+<body>
+    <header>
+        <!-- desktop nav -->
+        <nav class="desktop-nav">
+            <a href="index.html"><img src="img/logo.png" alt="Johans Kök logotyp"></a>
+            <div class="menu-links">
+                <a href="index.html">Hem</a>
+                <a class="active" href="menu.html">Meny</a>
+                <a href="booking.html">Boka bord</a>
+                <a href="contact.html">Kontakt</a>
+                <a href="about.html">Om oss</a>
+            </div>
+            <!-- nav hamburger button -->
+            <button name="meny" class="hamburger" aria-label="hamburger-menu"><span class="bar"></span></button>
+        </nav>
+        <!-- mobile nav -->
+        <nav class="mobile-nav">
+            <a href="index.html">Hem</a>
+            <a href="menu.html">Meny</a>
+            <a href="booking.html">Boka bord</a>
+            <a href="contact.html">Kontakt</a>
+            <a href="about.html">Om oss</a>
+        </nav>
+    </header>
+    <!-- background img -->
+    <div class="background4">
+        <!-- container -->
+        <div class="container">
+            <!-- white background behind text -->
+            <article class="white-plate">
+                <h1 class="center">Vår Meny</h1>
+                <p class="error center" id="error"> </p>
+                <hr>
+                <!-- print to article from menu API -->
+                <article id="starter">
+                    <h2>Förrätter</h2>
+                </article>
+                <hr>
+                <article id="main">
+                    <h2>Huvudrätter</h2>
+                </article>
+                <hr>
+                <article id="dessert">
+                    <h2>Efterrätter</h2>
+                </article>
+                <hr>
+            </article>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer>
+        <p><a href="booking.html">Boka bord</a></p>
+        <p><a href="contact.html">Kontakta oss</a></p>
+        <p>090-123456</p>
+        <p>Gränden 17, 90343 Umeå</p>
+    </footer>
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>

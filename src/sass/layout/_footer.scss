@@ -1,0 +1,14 @@
+// footer
+footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    padding: $base-padding;
+    background-color: $primary-color;
+}
+
+@media (max-width: 1000px) {
+    footer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

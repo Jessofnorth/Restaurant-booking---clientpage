@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicons -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="images/png" href="img/favicon.png">
+    <!-- css -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <title>Johans Kök</title>
+</head>
+
+<body>
+    <header>
+        <!-- desktop nav -->
+        <nav class="desktop-nav">
+            <a href="index.html"><img src="img/logo.png" alt="Johans Kök logotyp"></a>
+            <div class="menu-links">
+                <a href="index.html">Hem</a>
+                <a href="menu.html">Meny</a>
+                <a href="booking.html">Boka bord</a>
+                <a class="active" href="contact.html">Kontakt</a>
+                <a href="about.html">Om oss</a>
+            </div>
+            <!-- nav hamburger button -->
+            <button name="meny" class="hamburger" aria-label="hamburger-menu"><span class="bar"></span></button>
+        </nav>
+
+    </header>
+    <!-- mobile nav -->
+    <nav class="mobile-nav">
+        <a href="index.html">Hem</a>
+        <a href="menu.html">Meny</a>
+        <a href="booking.html">Boka bord</a>
+        <a href="contact.html">Kontakt</a>
+        <a href="about.html">Om oss</a>
+    </nav>
+    <!-- background img -->
+    <div class="background2">
+        <!-- container -->
+        <div class="container">
+            <!-- white plate behind text -->
+            <article class="white-plate">
+                <h1 class="center">Kontakta oss</h1>
+                <p>Allmänna frågor och boknings förfrågningar för större sällskap kan du göra vi nedan formulär.
+                </p>
+                <p>Vi svarar inom 48h. </p>
+                <!-- contact form -->
+                <form>
+                    <p>Fält markerade med * är obligatoriska.</p>
+                    <div class="forms">
+                        <label for="mail-name">*Namn:</label>
+                        <input type="text" name="mail-name" id="mail-name" required>
+                        <label for="mail-email">*Epost:</label>
+                        <input type="email" name="mail-email" id="mail-email" required>
+                        <label for="mail-message">*Meddelande:</label>
+                        <textarea name="mail-message" id="mail-message" cols="30" rows="10" placeholder="Skriv ditt meddelande här." required></textarea>
+                        <div class="gdpr"><input type="checkbox" name="gdpr" id="gdpr" required>
+                            <label for="gdpr">* Jag godkänner att Johans Kök får lagra mina uppgifter för att kunna
+                                hantera min förfrågan.</label>
+                        </div>
+                        <input type="submit" id="mail-submit" value="Skicka">
+                    </div>
+                    <p class="error center" id="error"> </p>
+                    <p class="posted center" id="emailsent"> </p>
+                </form>
+            </article>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer>
+        <p><a href="booking.html">Boka bord</a></p>
+        <p><a href="contact.html">Kontakta oss</a></p>
+        <p>090-123456</p>
+        <p>Gränden 17, 90343 Umeå</p>
+    </footer>
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>

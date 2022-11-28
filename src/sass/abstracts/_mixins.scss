@@ -1,0 +1,10 @@
+// max widths
+@mixin max1000 {
+    width: 100%;
+    max-width: 1000px;
+}
+
+@mixin max600 {
+    width: 100%;
+    max-width: 600px;
+}

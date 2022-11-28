@@ -1,0 +1,66 @@
+    // main nav links
+    .menu-links {
+        a {
+            color: $secondary-color;
+            text-decoration: none;
+            padding: $base-padding;
+            &:hover {
+                color: $primary-bg;
+                text-decoration: underline;
+            }
+        }
+        .active {
+            color: $primary-bg;
+            text-decoration: underline;
+        }
+    }
+    
+    // content links
+    a {
+        color: $primary-accent;
+        text-decoration: underline;
+        &:hover {
+            color: $primary-text;
+        }
+        &:visited {
+            color: $secondary-color;
+        }
+    }
+    
+    // links that looks like buttons
+    .btn-link {
+        background-color: $primary-accent;
+        font-family: $base-text;
+        font-size: 1em;
+        color: $secondary-color;
+        text-decoration: none;
+        border: $primary-text 1px solid;
+        border-radius: 10px;
+        padding: .5em 2em;
+        box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 8px;
+        &:hover {
+            color: $primary-bg;
+            background-color: $primary-color;
+        }
+        &:visited {
+            color: $secondary-color;
+            text-decoration: none;
+        }
+    }
+    
+    // footer links
+    footer {
+        p {
+            color: $secondary-color;
+            text-decoration: none;
+            padding: $base-padding;
+            a {
+                color: $secondary-color;
+                text-decoration: none;
+                &:hover {
+                    color: $primary-bg;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }

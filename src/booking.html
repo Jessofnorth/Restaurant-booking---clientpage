@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicons -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="images/png" href="img/favicon.png">
+    <!-- css -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <title>Johans Kök</title>
+</head>
+
+<body>
+    <header>
+        <!-- desktop nav -->
+        <nav class="desktop-nav">
+            <a href="index.html"><img src="img/logo.png" alt="Johans Kök logotyp"></a>
+            <div class="menu-links">
+                <a href="index.html">Hem</a>
+                <a href="menu.html">Meny</a>
+                <a class="active" href="booking.html">Boka bord</a>
+                <a href="contact.html">Kontakt</a>
+                <a href="about.html">Om oss</a>
+            </div>
+            <!-- nav hamburger button -->
+            <button name="meny" class="hamburger" aria-label="hamburger-menu"><span class="bar"></span></button>
+        </nav>
+        <!-- mobile nav -->
+        <nav class="mobile-nav">
+            <a href="index.html">Hem</a>
+            <a href="menu.html">Meny</a>
+            <a href="booking.html">Boka bord</a>
+            <a href="contact.html">Kontakt</a>
+            <a href="about.html">Om oss</a>
+        </nav>
+    </header>
+    <!-- background img -->
+    <div class="background3">
+        <!-- container -->
+        <div class="container">
+            <!-- white plate behind text -->
+            <article class="white-plate">
+                <h1 class="center">Boka bord</h1>
+                <p>Boka en helkväll hos Johans Kök!</p>
+                <p>Vi öppnar dörrarna kl 17:30 och kl 18 börjar köket leverera ut kvällens smakupplevelse.
+                </p>
+                <br>
+                <p>Vi kan ta upp till 50 personer per kväll.</p>
+                <p>Är sällskapet större än 8 personer ber vi er att kontakta oss via detta formulär eller ringa oss på 090-123456 för att boka.</p>
+                <form>
+                    <!-- booking form -->
+                    <p>Fält markerade med * är obligatoriska.</p>
+                    <div class="forms">
+                        <label for="name">*Namn:</label>
+                        <input type="text" name="name" id="name" required>
+                        <label for="phone">*Telefonnummer:</label>
+                        <input type="text" name="phone" id="phone" required>
+                        <label for="email">*Epost:</label>
+                        <input type="email" name="email" id="email" required>
+                        <label for="date">*Välj datum:</label>
+                        <input type="date" name="date" id="date" required>
+                        <label for="count">*Antal gäster:</label>
+                        <select class="count" name="count" id="count" required>
+                            <option value="" disabled selected>Antal gäster:</option>
+                            <option value="1">1 st</option>
+                            <option value="2">2 st</option>
+                            <option value="3">3 st</option>
+                            <option value="4">4 st</option>
+                            <option value="5">5 st</option>
+                            <option value="6">6 st</option>
+                            <option value="7">7 st</option>
+                            <option value="8">8 st</option>
+                        </select>
+                        <label for="message">Meddelande(valfritt):</label>
+                        <textarea name="message" id="message" cols="30" rows="3" placeholder="Skriv om du har allergier eller särskilda önskemål."></textarea>
+                        <div class="gdpr"><input type="checkbox" name="gdpr" id="gdpr" required>
+                            <label for="gdpr">* Jag godkänner att Johans Kök får lagra mina uppgifter för att kunna
+                                hantera min förfrågan.</label>
+                        </div>
+                        <input type="submit" id="submit" value="Boka">
+                    </div>
+                    <!-- error/posted msg -->
+                    <p class="error center" id="error"> </p>
+                    <p class="posted center" id="posted"> </p>
+                    <p class="posted center" id="emailsent"> </p>
+                </form>
+            </article>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer>
+        <p><a href="booking.html">Boka bord</a></p>
+        <p><a href="contact.html">Kontakta oss</a></p>
+        <p>090-123456</p>
+        <p>Gränden 17, 90343 Umeå</p>
+    </footer>
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>

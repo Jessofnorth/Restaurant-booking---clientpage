@@ -1,0 +1,32 @@
+// forms styling
+.forms {
+    display: grid;
+    grid-template-columns: 100%;
+    row-gap: .5em;
+    @include max600;
+    padding: $base-padding;
+    margin: 0 auto;
+}
+
+// login form
+.forms-login {
+    display: grid;
+    grid-template-columns: 100%;
+    row-gap: .5em;
+    @include max600;
+    padding: $base-padding;
+    margin: 0 auto;
+}
+
+input,
+textarea,
+select {
+    padding: .5em;
+    display: block;
+    width: 100%;
+}
+
+input[type=checkbox] {
+    width: 2em;
+    height: 2em;
+}

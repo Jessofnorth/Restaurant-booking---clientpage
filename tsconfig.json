@@ -1,0 +1,10 @@
+{"include": [
+    "src/typescript/*.ts"
+],
+"compilerOptions": {
+    "noImplicitAny": true,
+    "target": "ES6",
+    "module": "es2015"
+    
+}
+}
